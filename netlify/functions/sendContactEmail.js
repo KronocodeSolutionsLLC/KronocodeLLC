@@ -12,20 +12,27 @@ exports.handler = async (event) => {
   });
 
   const mailOptions = {
-    from: "kronocodesolutionsllc@gmail.com", // Authenticated sender
+    from: `"KronoCode Solutions" <kronocodesolutionsllc@gmail.com>`, // Friendly sender name
     to: "pranav@kronocode.com",
     subject: `New Entry: ${subject}`,
-    replyTo: email, // So replies go to the user
-    text: `
-Name: ${name}
+    replyTo: email,
+    text: `Name: ${name}
 Email: ${email}
 Phone: ${phone}
 Subject: ${subject}
 
 Message:
 ${message}
-  `,
+    `.trim(),
+    html: `
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Subject:</strong> ${subject}</p>
+      <p><strong>Message:</strong><br>${message.replace(/\n/g, "<br>")}</p>
+    `,
   };
+
   try {
     await transporter.sendMail(mailOptions);
     return {
