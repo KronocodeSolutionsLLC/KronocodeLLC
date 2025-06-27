@@ -6,15 +6,15 @@ exports.handler = async (event) => {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "redihire2025@gmail.com",
-      pass: "bzra nlmb ufso cgvy", // App password (safe way)
+      user: "kronocodesolutionsllc@gmail.com",
+      pass: "gqtg wibg qfso wpcd", // App password (safe way)
     },
   });
 
   const mailOptions = {
     from: email,
-    to: "redihirecore@redihire.com",
-    subject: `New Contact: ${subject}`,
+    to: "info@kronocode.com",
+    subject: `New Entry: ${subject}`,
     text: `
 Name: ${name}
 Email: ${email}

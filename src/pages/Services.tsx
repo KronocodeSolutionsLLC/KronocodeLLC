@@ -13,8 +13,6 @@ import AnimatedText from "../components/ui/AnimatedText";
 import GradientButton from "../components/ui/GradientButton";
 import FloatingCard from "../components/ui/FloatingCard";
 
-console.log("IN services");
-
 const Services = () => {
   return (
     <>
