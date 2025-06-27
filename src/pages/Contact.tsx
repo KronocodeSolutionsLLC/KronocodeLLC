@@ -152,7 +152,7 @@ const Contact = () => {
               
               <div className="rounded-xl overflow-hidden h-[300px] shadow-md">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101268.17002596055!2d-122.07335232547507!3d37.38911895201725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sMountain%20View%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1650000000000!5m2!1sen!2suk" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.163741519214!2d-106.971229!3d44.782009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534e17a84c788af1%3A0x9bbf68934b1f087!2s1309%20Coffeen%20Ave%20%231200%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2sus!4v1719600000000!5m2!1sen!2sus" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
