@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import {
   Code,
-  Users,
   LineChart,
   Database,
   LightbulbIcon,
@@ -9,12 +8,12 @@ import {
 } from "lucide-react";
 import SEO from "../components/SEO";
 import SectionHeading from "../components/ui/SectionHeading";
-import ServiceCard from "../components/ui/ServiceCard";
 import ParallaxSection from "../components/ui/ParallaxSection";
 import AnimatedText from "../components/ui/AnimatedText";
 import GradientButton from "../components/ui/GradientButton";
 import FloatingCard from "../components/ui/FloatingCard";
-import { TbGraph } from "react-icons/tb";
+
+console.log("IN services");
 
 const Services = () => {
   return (
