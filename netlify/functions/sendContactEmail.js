@@ -12,9 +12,10 @@ exports.handler = async (event) => {
   });
 
   const mailOptions = {
-    from: email,
+    from: "kronocodesolutionsllc@gmail.com", // Authenticated sender
     to: "pranav@kronocode.com",
     subject: `New Entry: ${subject}`,
+    replyTo: email, // So replies go to the user
     text: `
 Name: ${name}
 Email: ${email}
@@ -23,9 +24,8 @@ Subject: ${subject}
 
 Message:
 ${message}
-    `,
+  `,
   };
-
   try {
     await transporter.sendMail(mailOptions);
     return {
